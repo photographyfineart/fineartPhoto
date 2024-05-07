@@ -46,7 +46,7 @@ input, textarea{
     padding: 3px 6px 2px 6px;
     font-family: var(--font-03);
     color: var(--contactPrimary-color);
-    font-size: 2vw;
+/*     font-size: 2vw; */
 }
 
 .placeholder-css::placeholder{
