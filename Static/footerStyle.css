@@ -1,0 +1,46 @@
+.footer-css{
+    height: calc(var(--container-height) * 0.6) ;
+    background-image: url(../Media/Images/IMG20210503180929.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--secondary-color);
+}
+
+.foot-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-heading img{
+    margin: 10px 20px;
+}
+
+.foot-logo{
+    height: 50px;
+}
+
+.foot-link-container{
+    margin: auto;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-css .nav-link-img{
+    margin: 20px auto;
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#foot-facebook{
+    margin-left: 0vw;
+}

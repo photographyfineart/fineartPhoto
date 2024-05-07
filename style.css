@@ -1,0 +1,330 @@
+:root{
+    /* for fonts */
+    --font-01 : "Yatra One", system-ui;
+    --font-02 : "Nunito", sans-serif;
+    --font-03 : "Vidaloka", serif;
+    --letterSpacing-01: 5px;
+
+    /* all section property */
+    --container-height: 100vh;
+    --container-width: 100vw;
+    --primary-color: black;
+    --secondary-color: white;
+
+    /* for navigation */
+    --nav-height: 35px;
+    --navText-size: 18px;
+    --navImg-size: 17px;
+    --linkImg-margin: 10px;
+    --navLogo-size: 35px;
+    --menuImg-marginLeft: 1vw;
+    --menuImg-marginRight: 2vw;
+    --navBack-color: rgba(157, 187, 216, 0.541);
+    --navBackActive-color: rgb(157, 187, 216);
+    
+    /* for hero section */
+    --heroImg-size: 120px;
+    --heroImg-top: 61vh;
+    /* --heroTextPadding-top: calc(var(--heroImg-top) + var(--heroImg-size) ); */
+    
+    /* for grid section */
+    --grid-gap: 10px;
+    
+    /* for contact section */
+    --contactFont-size: xx-large;
+    --contactBack-color: #D9D2AB;
+    --contactPrimary-color: #4F4B35;
+    --input-width: 30vw;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.overflow-section{
+    overflow: hidden;
+}
+
+
+/* media query */
+@media (max-width: 360px){
+    :root{
+        --menuImg-marginLeft: 10px;
+        --menuImg-marginRight: 10px;
+        --heroImg-size: 30vw;
+        --heroImg-top: calc(var(--container-height)/2 - var(--heroImg-size)/2)
+    }
+    nav > .nav-link-img{
+        display: none;
+    }
+    .nav-heading{
+        margin-left: 10px;
+    }
+    .nav-heading h2{
+        display: none;
+    }
+    .complete{
+        color: black
+    }
+    nav > .nav-link-img{
+        display: none;
+    }
+    #dropdown .nav-link-img{
+        display: block;
+    }
+    #photos-section{
+        height: auto;
+    }
+    #photos-section .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(70vw , auto);
+        column-gap: var(--grid-gap);
+        row-gap: var(--grid-gap);
+        padding: var(--grid-gap);
+        width: 100vw;
+    }
+    #photos-section .grid-child{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #photos-section .grid-child-6{
+        display: none;
+    }
+    #gear-div h2{
+        font-size: 30px;
+        padding: 15px 20px;
+    }
+    #gear-div .gear-text{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    #submit{
+        width: 22vw
+    }
+    #footer-css .foot-heading{
+        font-size: 16px;
+    }
+    #footer-css .foot-logo{
+        height: 37px;
+        margin: 7px 15px;
+    }
+    #footer-css .foot-link-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-css .foot-link-container a{
+        margin-top: 5px;
+    }
+    #footer-css .nav-link-img{
+        display: none;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 579px){
+    :root{
+        --navText-size: 16px;
+        --heroImg-size: 25vw;
+        --heroImg-top: calc(var(--container-height)/2 - var(--heroImg-size)/2)
+    }
+    nav > .nav-link-img{
+        display: none;
+    }
+    .nav-heading{
+        margin-left: 10px;
+    }
+    .complete{
+        color: black
+    }
+    #dropdown .nav-link-img{
+        display: block;
+    }
+    #photos-section{
+        height: auto;
+    }
+    #photos-section .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(70vw , auto);
+        column-gap: var(--grid-gap);
+        row-gap: var(--grid-gap);
+        padding: var(--grid-gap);
+        width: 100vw;
+    }
+    #photos-section .grid-child{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #photos-section .grid-child-6{
+        display: none;
+    }
+    #gear-div h2{
+        font-size: 30px;
+        padding: 15px 20px;
+    }
+    #gear-div .gear-text{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    #submit{
+        width: 17vw
+    }
+    #footer-css .foot-heading{
+        font-size: 20px;
+    }
+    #footer-css .foot-heading{
+        font-size: 20px;
+    }
+    #footer-css .foot-logo{
+        height: 40px;
+        margin: 8px 18px;
+    }
+    #footer-css .foot-link-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-css .foot-link-container a{
+        margin-top: 5px;
+    }
+    #footer-css .nav-link-img{
+        display: none;
+    }
+}
+
+
+@media (min-width: 579px) and (max-width: 699px){
+    :root{
+        /* for navigation */
+        --nav-height: 27px;
+        --navLogo-size: 27px;
+        --navText-size: 16px;
+        --navImg-size: 15px;
+        --linkImg-margin: 8px;
+        --heroImg-size: 20vw;
+        --heroImg-top: calc(var(--container-height)/2 - var(--heroImg-size)/2)
+    }
+    #photos-section{
+        height: auto;
+    }
+    #photos-section .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(70vw , auto);
+        column-gap: var(--grid-gap);
+        row-gap: var(--grid-gap);
+        padding: var(--grid-gap);
+        width: 100vw;
+    }
+    #photos-section .grid-child{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    #photos-section .grid-child-6{
+        display: none;
+    }
+    #submit{
+        width: 13vw
+    }
+    #footer-css .foot-link-container{
+        width: 45vw;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 991px){
+    /* :root{
+        --heroImg-size: 20vw;
+    } */
+    .complete{
+        color: black
+    }
+    #submit{
+        width: 12vw
+    }
+    #footer-css .foot-link-container{
+        width: 40vw;
+    }
+}
+
+
+
+/* Regular screen size which is 992px to 1440px */
+
+
+
+@media (min-width: 1441px){
+    :root{
+        --navText-size: 1.5vw;
+        --navLogo-size: 3vw;
+        --linkImg-margin: 1.2vw ;
+        --nav-height: 3vw;
+        --navImg-size: 1.5vw;
+        --heroImg-size: 10vw;
+        --contactFont-size: 3vw ;
+    }
+    #dropdown{
+        width: 20vw;
+        right: -20vw;
+    }
+    .nav-link:has(.menu-checkbox:checked) #dropdown{
+        right: 0;
+    }
+    .hero-text{
+        font-size: 3vw;
+        margin-top: 2vh;
+    }
+    .grid-container .grid-child-10 h1{
+        font-size: 1vw;
+    }
+    legend{
+        font-size: 2vw;
+    }
+    .submit{
+        font-size: 1.5vw;
+    }
+    #gear-div h2{
+        font-size: 4vw;
+        padding: 1.5vw 2vw;
+    }
+    #gear-div .gear-text{
+        padding: .5vw 2vw;
+        font-size: 2vw;
+    }
+    form fieldset{
+        margin: 1vh 0;
+    }
+    .input-60vw, .input-30vw{
+        margin: .5vw 5px 0 5px;
+    }
+    #footer-css .foot-heading{
+        font-size: 3vw;
+    }
+    #footer-css .foot-logo{
+        height: 5vw;
+        margin: 1vh 1.5vw;
+    }
+    #footer-css .foot-link-container{
+        font-size: 1.5vw;
+        margin-bottom: 3vh;
+    }
+    /*
+    #footer-css .foot-link-container a{
+        margin-top: 5px;
+    } */
+}
+
+@media (max-height: 400px){
+    :root{
+        --heroImg-top: calc(var(--container-height)/2 - var(--heroImg-size)/2)
+    }
+}

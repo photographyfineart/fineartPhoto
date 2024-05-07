@@ -1,0 +1,29 @@
+.gear-section{
+    height: var(--container-height);
+    background-image: url(../Media/Images/IMG_20210725_140528.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gear-div{
+    width: 70vw;
+    height: 60vh;
+    background: rgba(75, 75, 75, 0.51);
+    font-family: var(--font-03);
+    color: var(--secondary-color);
+}
+
+.gear-div h2{
+    letter-spacing: var(--letterSpacing-01);
+    padding: 15px 40px;
+    font-size: 35px;
+}
+
+.gear-text{
+    padding: 5px 40px;
+    font-size: 17px;
+}
